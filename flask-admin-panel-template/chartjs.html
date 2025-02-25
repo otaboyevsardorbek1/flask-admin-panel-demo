@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+        <!-- META DATA -->
+        <meta charset="UTF-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Dashsage â Bootstrap 5  Admin & Dashboard Template">
+        <meta name="author" content="Techne Infosys">
+        <meta name="keywords"
+            content="admin template, Dashsage admin template, dashboard template, flat admin template, responsive admin template, web app">
+
+        <!-- FAVICON -->
+        <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico">
+
+        <!-- TITLE -->
+        <title>Dashsage â Bootstrap 5 Admin & Dashboard Template </title>
+    <!-- BOOTSTRAP CSS -->
+    <link id="style" href="../assets/css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- STYLE CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Plugins CSS -->
+    <link href="../assets/css/plugins.css" rel="stylesheet">
+
+    <!--- FONT-ICONS CSS -->
+    <link href="../assets/css/icons.css" rel="stylesheet">
+
+    <!-- INTERNAL Switcher css -->
+    <link href="../assets/switcher/css/switcher.css" rel="stylesheet">
+    <link href="../assets/switcher/demo.css" rel="stylesheet">
+</head>
+
+<body class="app sidebar-mini ltr mode">
+
+    <!--{ Pre-loder start }-->
+    <div id="global-loader">
+        <img src="../assets/images/loader.svg" class="loader-img" alt="Loader">
+    </div>
+    <!--{ Pre-loder end }-->
+
+    <!--{ Switcher Start }-->
+    <div class="switcher-wrapper">
+        <div class="demo_changer">
+            <div class="p-4 m-0 lh-1 border-bottom template-customizer-header position-relative py-3 d-flex align-items-center justify-content-between">
+                <div>
+                    <h3 class="template-customizer-t-panel_header mb-2">Template Customizer</h3>
+                     <p class="template-customizer-t-panel_sub_header mb-0">Customize and preview in real time</p>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <a href="javascript:void(0)" onclick="localStorage.clear();
+                    document.querySelector('html').style = '';
+                    names() ;
+                    resetData() ;" class="text-danger"><i class="fe fe-refresh-ccw fs-17 text-danger"></i></a>
+                </div>
+            </div>
+            <div class="form_holder sidebar-right1 ps ps--active-y">
+                <div class="row">
+                    <div class="predefined_styles">
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-layout-navbar"></i> Navigation Style</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex"> <span class="me-auto">Vertical Menu</span>
+                                        <label class="switch switch-square">
+                                            <input type="radio" name="onoffswitch15" id="myonoffswitch34" class="switch-input" checked> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> <span class="me-auto">Horizontal Click
+                                            Menu</span>
+                                            <label for="myonoffswitch35" class="switch switch-square">
+                                                <input type="radio" name="onoffswitch15" id="myonoffswitch35" class="switch-input"> 
+                                                    <span class="switch-toggle-slider">
+                                                        <span class="switch-on"></span>
+                                                        <span class="switch-off"></span>
+                                                    </span>
+                                                </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> <span class="me-auto">Horizontal Hover
+                                            Menu</span>
+                                            <label for="myonoffswitch111" class="switch switch-square">
+                                                <input type="radio" name="onoffswitch15" id="myonoffswitch111" class="switch-input">
+                                                <span class="switch-toggle-slider">
+                                                    <span class="switch-on"></span>
+                                                    <span class="switch-off"></span>
+                                                </span>
+                                            </label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-directions"></i> LTR and RTL VERSIONS</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex"> <span class="me-auto">LTR Version</span>
+                                        <label for="myonoffswitch23" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch7" id="myonoffswitch23" class="switch-input" checked="">
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">RTL Version</span>
+                                        <label for="myonoffswitch24" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch7" id="myonoffswitch24" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-color-swatch"></i> Light Theme Style</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex"> <span class="me-auto">Light Theme</span>
+                                        <label for="myonoffswitch1"  class="switch switch-square">
+                                            <input type="radio" name="onoffswitch1" id="myonoffswitch1" class="switch-input" checked=""> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex"> <span class="me-auto">Light Primary</span>
+                                        <div class=""> <input class="w-30p h-30 input-color-picker color-primary-light"
+                                                value="#0d9c1e" id="colorID" oninput="changePrimaryColor()" type="color"
+                                                data-id="bg-color" data-id1="bg-hover" data-id2="bg-border"
+                                                data-id7="transparentcolor" name="lightPrimary"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-moon-stars"></i> Dark Theme Style</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex mt-2"> <span class="me-auto">Dark Theme</span>
+                                        <label for="myonoffswitch2" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch1" id="myonoffswitch2" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> <span class="me-auto">Dark Primary</span>
+                                        <div class=""> <input class="w-30p h-30 input-dark-color-picker color-primary-dark"
+                                                value="#0d9c1e" id="darkPrimaryColorID" oninput="darkPrimaryColor()"
+                                                type="color" data-id="bg-color" data-id1="bg-hover" data-id2="bg-border"
+                                                data-id3="primary" data-id8="transparentcolor" name="darkPrimary">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft">
+                            <h4>Menu Styles</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle lightMenu d-flex"> <span class="me-auto">Light Menu</span>
+                                        <label for="myonoffswitch3" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch2" id="myonoffswitch3" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle colorMenu d-flex mt-2"> 
+                                        <span class="me-auto">Color Menu</span>
+                                        <label for="myonoffswitch4" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch2" id="myonoffswitch4" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span> 
+                                        </label>
+                                    </div>
+                                    <div class="switch-toggle darkMenu d-flex mt-2"> 
+                                        <span class="me-auto">Dark Menu</span>
+                                        <label for="myonoffswitch5" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch2" id="myonoffswitch5" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-brush"></i> Header Styles</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle lightHeader d-flex"> 
+                                        <span class="me-auto">Light Header</span>
+                                        <label for="myonoffswitch6" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch3" id="myonoffswitch6" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle  colorHeader d-flex mt-2"> 
+                                        <span class="me-auto">Color Header</span>
+                                        <label for="myonoffswitch7" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch3" id="myonoffswitch7" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle darkHeader d-flex mt-2"> 
+                                        <span class="me-auto">Dark Header</span>
+                                        <label for="myonoffswitch8" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch3" id="myonoffswitch8" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="swichermainleft">
+                            <h4> <i class="ti ti-adjustments-horizontal"></i> Layout Positions</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex"> 
+                                        <span class="me-auto">Fixed</span>
+                                        <label for="myonoffswitch11" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch5" id="myonoffswitch11" class="switch-input" checked=""> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Scrollable</span>
+                                        <label for="myonoffswitch12" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch5" id="myonoffswitch12" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swichermainleft leftmenu-styles">
+                            <h4> <i class="ti ti-layout-sidebar"></i> Sidemenu layout Styles</h4>
+                            <div class="skin-body">
+                                <div class="switch_section">
+                                    <div class="switch-toggle d-flex"> 
+                                        <span class="me-auto">Default Menu</span>
+                                        <label for="myonoffswitch13" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6" id="myonoffswitch13" class="switch-input default-menu" checked="">
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Icon with Text</span>
+                                        <label for="myonoffswitch14" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6" id="myonoffswitch14" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Icon Overlay</span>
+                                        <label for="myonoffswitch15" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6" id="myonoffswitch15" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Closed Sidemenu</span>
+                                        <label for="myonoffswitch16" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6" id="myonoffswitch16" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Hover Submenu</span>
+                                        <label for="myonoffswitch17" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6" id="myonoffswitch17" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label> 
+                                    </div>
+                                    <div class="switch-toggle d-flex mt-2"> 
+                                        <span class="me-auto">Double Menu Style </span>
+                                        <label for="doublemenu-switch" class="switch switch-square">
+                                            <input type="radio" name="onoffswitch6"  id="doublemenu-switch" class="switch-input"> 
+                                            <span class="switch-toggle-slider">
+                                                <span class="switch-on"></span>
+                                                <span class="switch-off"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--{ Switcher End }-->
+    <!-- PAGE -->
+    <div class="page">
+        <div class="page-main">
+            <!--{ app header start }-->
+            <div class="app-header header sticky">
+                <div class="container-fluid main-container">
+                    <div class="d-flex">
+                        <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar" href="javascript:void(0)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid status_toggle middle sidebar-toggle"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                        </a>
+                        <!-- sidebar-toggle-->
+                        <a class="logo-horizontal " href="index.html">
+                            <img src="../assets/images/brand/logo-white.png" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="../assets/images/brand/logo-dark.png" class="header-brand-img light-logo1"
+                                alt="logo">
+                        </a>
+                        <!-- LOGO -->
+                        <div class="main-header-center ms-3 d-none d-lg-block">
+                            <input type="text" class="form-control" id="typehead" placeholder="Search for results...">
+                            <button class="btn px-0 pt-2"><i class="fe fe-search" aria-hidden="true"></i></button>
+                        </div>
+                        <div class="d-flex order-lg-2 ms-auto header-right-icons">
+                            <!-- SEARCH -->
+                            <button class="navbar-toggler navresponsive-toggler d-lg-none ms-auto" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-4"
+                                aria-controls="navbarSupportedContent-4" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon fe fe-more-vertical"></span>
+                            </button>
+                            <div class="navbar navbar-collapse responsive-navbar p-0">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                                    <div class="d-flex order-lg-2">
+                                        <div class="dropdown d-lg-none d-flex">
+                                            <a href="javascript:void(0)" class="nav-link icon" data-bs-toggle="dropdown">
+                                                <i class="fe fe-search"></i>
+                                            </a>
+                                            <div class="dropdown-menu header-search dropdown-menu-start">
+                                                <div class="input-group w-100 p-2">
+                                                    <input type="text" class="form-control" placeholder="Search....">
+                                                    <div class="input-group-text btn btn-primary">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex country">
+                                            <span class="nav-link icon text-center">
+                                                <select id="template-with-flag-icons">
+                                                    <option selected value="IN" data-flag="in">India</option>
+                                                    <option value="Alaska" data-flag="ad">Alaska</option>
+                                                    <option value="Hawaii" data-flag="ae">Hawaii</option>
+                                                    <option value="California" data-flag="af">California</option>
+                                                    <option value="Nevada" data-flag="ag">Nevada</option>
+                                                    <option value="Oregon" data-flag="ao">Oregon</option>
+                                                    <option value="Washington" data-flag="at">Washington</option>
+                                                    <option value="Indonesia" data-flag="id">Indonesia</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                        <!-- COUNTRY -->
+                                        <div class="d-flex">
+                                            <a class="nav-link icon theme-layout nav-link-bg layout-setting">
+                                                <span class="dark-layout"><i class="ti ti-moon-stars"></i></span>
+                                                <span class="light-layout"><i class="fe fe-sun"></i></span>
+                                            </a>
+                                        </div>
+                                        <!-- Theme-Layout -->
+                                        <div class="dropdown  d-flex shopping-cart">
+                                            <a class="nav-link icon text-center" data-bs-toggle="dropdown">
+                                                <i class="fe fe-shopping-cart"></i><span class="badge bg-secondary header-badge">4</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">My Cart</h6>
+                                                        <a class="btn btn-primary w-sm btn-sm py-2" href="ecommerce-cart.html"><i class="fe fe-shopping-cart"></i> View Cart</a>
+                                                    </div>
+                                                </div>
+                                                <div class="header-dropdown-list message-menu">
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="ecommerce-cart.html" class="open-file"></a>
+                                                        <span class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                         <img src="../assets/images/products/3.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Yellow polka dot</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex fs-16">
+                                                            <span class="fs-16 text-dark d-none d-sm-block px-4">
+                                                                $600
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="ecommerce-cart.html" class="open-file"></a>
+                                                        <span
+                                                            class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                         <img src="../assets/images/products/42.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Black dress, chic</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex">
+                                                            <span class="fs-16 text-dark d-none d-sm-block px-4">
+                                                                $654
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="ecommerce-cart.html" class="open-file"></a>
+                                                        <span
+                                                            class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                        <img src="../assets/images/products/43.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Sunglasses, stylish, hat</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex">
+                                                            <span class="fs-16 text-dark d-none d-sm-block px-4">
+                                                                $320
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="ecommerce-cart.html" class="open-file"></a>
+                                                        <span
+                                                            class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                        <img src="../assets/images/products/44.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Smiling, dress, pink.</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex">
+                                                            <span class="fs-16 text-dark d-none d-sm-block px-4">
+                                                                $1000
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item d-flex p-4">
+                                                        <a href="ecommerce-cart.html" class="open-file"></a>
+                                                        <span
+                                                            class="avatar avatar-xl br-5 me-3 align-self-center cover-image">
+                                                        <img src="../assets/images/products/45.jpg" alt="" class="">
+                                                        </span>
+                                                        <div class="wd-50p">
+                                                            <h5 class="mb-1">Gorgeous, floral, chic.</h5>
+                                                            <span>Status: <span class="text-success">In Stock</span></span>
+                                                        </div>
+                                                        <div class="ms-auto text-end d-flex">
+                                                            <span class="fs-16 text-dark d-none d-sm-block px-4">
+                                                                $800
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <div class="dropdown-footer text-end">
+                                                    <span class="p-2 fs-17 fw-semibold">Total: $9000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- CART -->
+                           
+                                        <div class="dropdown  d-flex notifications">
+                                            <a class="nav-link icon" data-bs-toggle="dropdown"><i
+                                                    class="fe fe-bell"></i><span class=" pulse"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">Notifications</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="notifications-menu">
+                                                    <div class="d-flex align-items-start dropdown-item">
+                                                        <div class="flex-grow-1">
+                                                          <div class="d-flex align-items-start justify-content-between mb-1">
+                                                            <a href="#" class="p-0">
+                                                              <h5 class="mb-0">Desktop notification turned on</h5>
+                                                            </a>
+                                                            <a href="#" class="text-danger p-0"><i class="fe fe-x"></i></a>
+                                                          </div>
+                                                          <a href="" class="p-0 d-flex align-items-end justify-content-between p-12">
+                                                            <p class="mb-0 text-muted">
+                                                              Now you will receive desktop notifications
+                                                            </p>
+                                                            <span class="text-sm ms-2 text-nowrap">1 min ago</span>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="d-flex align-items-start dropdown-item">
+                                                        <div class="flex-grow-1">
+                                                          <div class="d-flex align-items-start justify-content-between mb-1">
+                                                            <a href="#" class="p-0">
+                                                              <h5 class="mb-0">Admin settings</h5>
+                                                            </a>
+                                                            <a href="#" class="text-danger p-0"><i class="fe fe-x"></i></a>
+                                                          </div>
+                                                          <a href="" class="p-0 d-flex align-items-end justify-content-between p-12">
+                                                            <p class="mb-0 text-muted">
+                                                                Setup complete
+                                                            </p>
+                                                            <span class="text-sm ms-2 text-nowrap">8 min ago</span>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="d-flex align-items-start dropdown-item">
+                                                        <div class="flex-grow-1">
+                                                          <div class="d-flex align-items-start justify-content-between mb-1">
+                                                            <a href="#" class="p-0">
+                                                              <h5 class="mb-0">Mailbox</h5>
+                                                            </a>
+                                                            <a href="#" class="text-danger p-0"><i class="fe fe-x"></i></a>
+                                                          </div>
+                                                          <a href="" class="p-0 d-flex align-items-end justify-content-between p-12">
+                                                            <p class="mb-0 text-muted">
+                                                                you have 15 unread mails.
+                                                            </p>
+                                                            <span class="text-sm ms-2 text-nowrap">9 min ago</span>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="d-flex align-items-start dropdown-item">
+                                                        <div class="flex-grow-1">
+                                                          <div class="d-flex align-items-start justify-content-between mb-1">
+                                                            <a href="#" class="p-0">
+                                                              <h5 class="mb-0">Order received</h5>
+                                                            </a>
+                                                            <a href="#" class="text-danger p-0"><i class="fe fe-x"></i></a>
+                                                          </div>
+                                                          <a href="" class="p-0 d-flex align-items-end justify-content-between p-12">
+                                                            <p class="mb-0 text-muted">
+                                                                New order received.
+                                                            </p>
+                                                            <span class="text-sm ms-2 text-nowrap">10 min ago</span>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                      <div class="d-flex align-items-start dropdown-item">
+                                                        <div class="flex-grow-1">
+                                                          <div class="d-flex align-items-start justify-content-between mb-1">
+                                                            <a href="#" class="p-0">
+                                                              <h5 class="mb-0">Desktop notification turned on</h5>
+                                                            </a>
+                                                            <a href="#" class="text-danger p-0"><i class="fe fe-x"></i></a>
+                                                          </div>
+                                                          <a href="" class="p-0 d-flex align-items-end justify-content-between p-12">
+                                                            <p class="mb-0 text-muted">
+                                                              Now you will receive desktop notifications
+                                                            </p>
+                                                            <span class="text-sm ms-2 text-nowrap">16 min ago</span>
+                                                          </a>
+                                                        </div>
+                                                      </div>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="basic-alert.html"
+                                                    class="dropdown-item text-center p-3 text-muted">View all
+                                                    Notification</a>
+                                            </div>
+                                        </div>
+                                        <!-- NOTIFICATIONS -->
+                                        <div class="dropdown  d-flex message">
+                                            <a class="nav-link icon text-center" data-bs-toggle="dropdown">
+                                                <i class="fe fe-message-square"></i><span class="pulse-danger"></span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading border-bottom">
+                                                    <div class="d-flex">
+                                                        <h6 class="mt-1 mb-0 fs-16 fw-semibold text-dark">You have 4
+                                                            Messages</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="message-menu message-menu-scroll">
+                                                    <a class="dropdown-item d-flex" href="private-chat.html">
+                                                        <span class="avatar avatar-md  me-3 align-self-center cover-image">
+                                                            <img src="../assets/images/profiles/1.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1">John Smith</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    3:00 am
+                                                                </small>
+                                                            </div>
+                                                            <span>Added new feature to the dashboard...</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="private-chat.html">
+                                                        <span
+                                                            class="avatar avatar-md  me-3 align-self-center cover-image">
+                                                        <img src="../assets/images/profiles/15.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1">Emily Johnson</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    4:20 am
+                                                                </small>
+                                                            </div>
+                                                            <span>Uploaded photos from the event...</span>
+                                                        </div>
+                                                    </a>
+                                                    <a class="dropdown-item d-flex" href="private-chat.html">
+                                                        <span class="avatar avatar-md  me-3 align-self-center cover-image">
+                                                        <img src="../assets/images/profiles/12.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1">Michael Brown</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    6:30 pm
+                                                                </small>
+                                                            </div>
+                                                            <span>Completed the final review...</span>
+                                                        </div>
+                                                    </a>
+                                        
+                                                    <a class="dropdown-item d-flex" href="private-chat.html">
+                                                        <span class="avatar avatar-md  me-3 align-self-center cover-image">
+                                                           <img src="../assets/images/profiles/3.jpg" alt="">
+                                                        </span>
+                                                        <div class="wd-90p">
+                                                            <div class="d-flex">
+                                                                <h5 class="mb-1">Sarah Davis</h5>
+                                                                <small class="text-muted ms-auto text-end">
+                                                                    7:00 pm
+                                                                </small>
+                                                            </div>
+                                                            <span>Received approval for project proposal...</span>
+                                                        </div>
+                                                    </a>
+
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a href="private-chat.html" class="dropdown-item text-center p-3 text-muted">See all
+                                                    Messages</a>
+                                            </div>
+                                        </div>
+                            
+                                        <div class="demo-icon nav-link icon"> 
+                                            <i class="fe fe-settings text_primary"></i> 
+                                        </div>
+                                        <!-- SIDE-MENU -->
+                                        <div class="dropdown d-flex">
+                                            <a class="nav-link icon full-screen-link nav-link-bg">
+                                                <i class="fe fe-minimize fullscreen-button"></i>
+                                            </a>
+                                        </div>
+                                        <!-- FULL-SCREEN -->
+                                        <div class="dropdown d-flex profile-1">
+                                            <a href="javascript:void(0)" data-bs-toggle="dropdown" class="nav-link user-dropdown">
+                                                <img src="../assets/images/profiles/5.jpg" alt="profile-user"
+                                                    class="profile-user avatar  cover-image">
+                                                <div class="media-body d-lg-block d-none box-col-none ps-2">
+                                                    <p class="mb-0">Alex Mora</p>
+                                                    <p class="mb-0">Admin</p>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                                                <div class="drop-heading">
+                                                    <div class="text-center">
+                                                        <h5 class="text-dark mb-0 fs-14 fw-semibold">Aashvi Monroe</h5>
+                                                        <small class="text-muted">Super Admin</small>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-divider m-0"></div>
+                                                <a class="dropdown-item" href="user-account-view.html">
+                                                    <i class="dropdown-icon fe fe-user"></i> Profile
+                                                </a>
+                                                <a class="dropdown-item" href="lockscreen.html">
+                                                    <i class="dropdown-icon fe fe-lock"></i> Lockscreen
+                                                </a>
+                                                <a class="dropdown-item" href="authentication-signin.html">
+                                                    <i class="dropdown-icon fe fe-alert-circle"></i> Sign out
+                                                </a>
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--{ app header end }-->
+            <!--{ app sidebar start }-->
+            <div class="sticky">
+                <div class="app-sidebar__overlay" data-bs-toggle="sidebar"></div>
+                <div class="app-sidebar">
+                    <div class="side-header">
+                        <a class="header-brand1" href="index.html">
+                            <img src="../assets/images/brand/logo-white.png" class="header-brand-img desktop-logo" alt="logo">
+                            <img src="../assets/images/brand/icon-dark.png" class="header-brand-img toggle-logo" alt="logo">
+                            <img src="../assets/images/brand/icon-dark.png" class="header-brand-img light-logo" alt="logo">
+                            <img src="../assets/images/brand/logo-dark.png" class="header-brand-img light-logo1" alt="logo">
+                        </a>
+                        <!-- LOGO -->
+                    </div>
+                    <div class="main-sidemenu">
+                        <div class="slide-left disabled" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+                                width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+                            </svg></div>
+                        <ul class="side-menu">
+                            <li class="sub-category">
+                                <h3>Main</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-home"></i><span class="side-menu__label">Dashboards</span><i
+                                        class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Dashboards</a>
+                                                        </li>
+                                                        <li><a href="index.html" class="slide-item"> eCommerce</a></li>
+                                                        <li><a href="dashboard-crm.html" class="slide-item">Crm</a></li>
+                                                        <li><a href="analytics.html" class="slide-item"> Analytics</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                             <li class="sub-category">
+                                <h3>Apps & Pages</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" href="landing-page.html"><i
+                                        class="side-menu__icon  ti ti-layout-navbar"></i><span class="side-menu__label">Landing page</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-slack"></i><span class="side-menu__label">Application</span><i
+                                        class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Application</a></li>
+                                                        <li><a href="app-kanban.html" class="slide-item">Kanban</a></li>
+                                                        <li><a href="calendar.html" class="slide-item">Calendar</a></li>
+                                                        <li><a href="app-calendar.html" class="slide-item">Event Calendar</a></li>
+                                                        <li><a href="app-list-calendar.html" class="slide-item">List Calendar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" href="private-chat.html"><i
+                                        class="side-menu__icon  ti ti-brand-hipchat"></i><span class="side-menu__label">Chat</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-user"></i><span class="side-menu__label">Users</span><i
+                                        class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Users</a></li>
+                                                        <li><a href="user-list.html" class="slide-item">List</a></li>
+                                                        <li><a href="user-reports.html" class="slide-item">Reports</a></li>
+                                                        <li class="sub-slide">
+                                                            <a class="sub-sidenav-menu-item" data-bs-toggle="sub-slide"
+                                                                href="javascript:void(0)"><span
+                                                                    class="sub-side-menu__label">View</span><i
+                                                                    class="sub-angle fe fe-chevron-right"></i></a>
+                                                            <ul class="sub-slide-menu">
+                                                                <li><a class="sub-slide-item" href="user-account-view.html">Account</a></li>
+                                                                <li><a class="sub-slide-item" href="user-security-view.html">Security</a></li>
+                                                                <li><a class="sub-slide-item" href="user-billing-view.html">Billing & Plans</a></li>
+                                                                <li><a class="sub-slide-item" href="user-notifications-view.html">Notifications</a></li>
+                                                                <li><a class="sub-slide-item" href="user-connections-view.html">Connections</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-shopping-cart"></i><span
+                                        class="side-menu__label">Ecommerce</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Ecommerce</a></li>
+                                                        <li><a href="ecommerce-product-add.html" class="slide-item">Add Product</a></li>
+                                                        <li><a href="ecommerce-product.html" class="slide-item">Products</a></li>
+                                                        <li><a href="ecommerce-product-details.html" class="slide-item">Products Detail</a></li>
+                                                        <li><a href="ecommerce-product-list.html" class="slide-item">Product List</a></li>
+                                                        <li><a href="ecommerce-cart.html" class="slide-item">Cart</a></li>
+                                                        <li><a href="ecommerce-wishlist.html" class="slide-item">Wishlist</a></li>
+                                                        <li><a href="ecommerce-order-list.html" class="slide-item">Order Lists</a></li>
+                                                        <li><a href="ecommerce-product-referral.html" class="slide-item">Referrals</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-lock"></i><span
+                                        class="side-menu__label">Authentication</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Authentication</a></li>
+                                                        <li><a class="slide-item" href="authentication-signin.html">Sign up</a></li>
+                                                        <li><a class="slide-item" href="register.html">Sign in</a></li>
+                                                        <li><a class="slide-item" href="forgot-password.html"> Forgot Password </a></li>
+                                                        <li><a class="slide-item" href="lockscreen.html">Lock Screen</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-alert-triangle"></i><span
+                                        class="side-menu__label">Error Pages</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Authentication</a></li>
+                                                        <li><a class="slide-item" href="400.html">400</a></li>
+                                                        <li><a class="slide-item" href="401.html">401</a></li>
+                                                        <li><a class="slide-item" href="403.html">403 </a></li>
+                                                        <li><a class="slide-item" href="404.html">404</a></li>
+                                                        <li><a class="slide-item" href="500.html">500</a></li>
+                                                        <li><a class="slide-item" href="503.html">503</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-category">
+                                <h3>Elements</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-layers"></i><span class="side-menu__label">Basic</span><i
+                                        class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Basic</a>
+                                                        </li>
+                                                        <li><a class="slide-item"  href="basic-alert.html">Alert</a></li>
+                                                        <li><a class="slide-item"  href="basic-buttons.html">Button</a></li>
+                                                        <li><a class="slide-item"  href="basic-badges.html">Badges</a></li>
+                                                        <li><a class="slide-item"  href="basic-breadcrumb.html">Breadcrumb</a></li>
+                                                        <li><a class="slide-item"  href="basic-cards.html">Cards</a></li>
+                                                        <li><a class="slide-item"  href="basic-accordion.html">Accordion</a></li>
+                                                        <li><a class="slide-item"  href="basic-carousel.html">Carousel</a></li>
+                                                        <li><a class="slide-item"  href="basic-dropdowns.html">Dropdowns</a></li>
+                                                        <li><a class="slide-item"  href="basic-offcanvas.html">Offcanvas</a></li>
+                                                        <li> <a class="slide-item" href="basic-pagination.html">Pagination</a></li>
+                                                        <li> <a class="slide-item" href="basic-progress.html">Progress</a></li>
+                                                        <li><a class="slide-item"  href="basic-list-group.html">List group</a></li>
+                                                        <li><a class="slide-item"  href="basic-modal.html">Modal</a></li>
+                                                        <li><a class="slide-item"  href="basic-spinner.html">Spinner</a></li>
+                                                        <li> <a class="slide-item" href="basic-tabs.html">Tabs</a></li>
+                                                        <li><a class="slide-item"  href="basic-typography.html">Typography</a></li>
+                                                        <li><a class="slide-item"  href="basic-tooltip-popover.html">Tooltip & popovers</a></li>
+                                                        <li><a class="slide-item"  href="basic-toasts.html">Toasts</a></li>
+                                                        <li class="sub-slide">
+                                                            <a class="sub-sidenav-menu-item" data-bs-toggle="sub-slide"
+                                                                href="javascript:void(0)"><span
+                                                                    class="sub-side-menu__label">Utilities</span><i
+                                                                    class="sub-angle fe fe-chevron-right"></i></a>
+                                                            <ul class="sub-slide-menu">
+                                                                <li><a class="sub-slide-item" href="avatars.html">Avatars</a></li>
+                                                                <li><a class="sub-slide-item" href="position.html">Position</a></li>
+                                                                <li><a class="sub-slide-item" href="columns.html">Columns</a></li>
+                                                                <li><a class="sub-slide-item" href="flex.html">Flex</a></li>
+                                                                <li><a class="sub-slide-item" href="gutters.html">Gutters</a></li>
+                                                                <li><a class="sub-slide-item" href="more.html">More</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-briefcase"></i><span
+                                        class="side-menu__label">Advance</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Advance</a></li>
+                                                        <li><a class="slide-item" href="sweet-alert.html">Sweet alert</a></li>
+                                                        
+                                                        <li><a class="slide-item" href="notification.html">Notification</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon ti ti-gift"></i><span
+                                        class="side-menu__label">icons</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">icons</a></li>
+                                                        <li><a class="slide-item" href="bootstrap-icons.html">Bootstrap Icons</a></li>
+                                                        <li><a class="slide-item" href="tabler-icons.html">Tabler</a></li>
+                                                        <li><a class="slide-item" href="fontawesome-icons.html">Font Awesome</a></li>
+                                                        <li><a class="slide-item" href="material-designicons-icons.html">Material Design Icons</a></li>
+                                                        <li><a class="slide-item" href="simple-line-icons.html">Simple Line Icons</a></li>
+                                                        <li><a class="slide-item" href="ionic-icons.html">Ionic Icons</a></li>
+                                                        <li><a class="slide-item" href="feather-icons.html">Feather Icons</a></li>
+                                                        <li><a class="slide-item" href="flags-icons.html">Flags Icons</a></li>
+                                                        <li><a class="slide-item" href="payments-icons.html">Payments Icons</a></li>
+                                                        <li><a class="slide-item" href="typicons.html">Typicons</a></li>
+                                                        <li><a class="slide-item" href="weather-icons.html">Weather Icons</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-category">
+                                <h3>Maps & Charts</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-map-pin"></i><span
+                                        class="side-menu__label">Maps</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Maps</a></li>
+                                                        <li><a href="leaflet-maps.html" class="slide-item">Leaflet Maps</a></li>
+                                                        <li><a href="mapel-maps.html" class="slide-item">Mapel Maps</a></li>
+                                                        <li><a href="vector-maps.html" class="slide-item">Vector Maps</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon fe fe-bar-chart-2"></i><span
+                                        class="side-menu__label">Chart</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Chart</a></li>
+                                                        <li><a href="chartjs.html" class="slide-item">ChartJs</a></li>
+                                                        <li><a href="flot-charts.html" class="slide-item">Flot Charts</a></li>
+                                                        <li><a href="echarts.html" class="slide-item">ECharts</a></li>
+                                                        <li><a href="morris-charts.html" class="slide-item">Morris Charts</a></li>
+                                                        <li><a href="nvd3-charts.html" class="slide-item">Nvd3 Charts</a></li>
+                                                        <li class="sub-slide">
+                                                            <a class="sub-sidenav-menu-item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
+                                                                    class="sub-side-menu__label">C3 Charts</span><i
+                                                                    class="sub-angle fe fe-chevron-right"></i></a>
+                                                            <ul class="sub-slide-menu">
+                                                                <li><a class="sub-slide-item" href="c-charts.html">Bar Charts</a></li>
+                                                                <li><a class="sub-slide-item" href="line-chart.html">Line Charts</a></li>
+                                                                <li><a class="sub-slide-item" href="dount-charts.html">Dount Charts</a></li>
+                                                                <li><a class="sub-slide-item" href="pie-chart.html">Pie Charts</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-category">
+                                <h3>Forms</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i class="side-menu__icon ti ti-forms"></i><span
+                                        class="side-menu__label">Forms Elements</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Forms Elements</a></li>
+                                                        <li><a class="slide-item" href="form-elements.html">Form Basic</a></li>
+                                                        <li><a class="slide-item" href="form-floating.html">Form Floating</a></li>
+                                                        <li><a class="slide-item" href="form-options.html">Form Options</a></li>
+                                                        <li><a class="slide-item" href="input-group.html">Input Groups</a></li>
+                                                        <li><a class="slide-item" href="form-input-spinners.html"> Form Input Spinners</a></li>
+                                                        <li><a class="slide-item" href="gerenal-elements.html">Gerenal Elements</a></li>
+                                                        <li><a class="slide-item" href="form-wizard.html">Form Wizard</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon ti ti-plug"></i><span
+                                        class="side-menu__label">Forms Plugins</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Forms Plugins</a></li>
+                                                        <li><a class="slide-item" href="form-datepicker.html">Date Pickers</a></li>
+                                                        <li><a class="slide-item" href="form-select.html">Select2</a></li>
+                                                        <li><a class="slide-item" href="form-inputmask.html">Input Masks</a></li>
+                                                        <li><a class="slide-item" href="file-upload.html">File Upload</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon ti ti-edit"></i><span
+                                        class="side-menu__label">Text Editors</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Text Editors</a></li>
+                                                        <li class="sub-slide">
+                                                            <a class="sub-sidenav-menu-item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
+                                                                    class="sub-side-menu__label">CK editor</span><i
+                                                                    class="sub-angle fe fe-chevron-right"></i></a>
+                                                            <ul class="sub-slide-menu">
+                                                                <li><a class="sub-slide-item" href="classic-editor.html">classic</a></li>
+                                                                <li><a class="sub-slide-item" href="document-editor.html">Document</a></li>
+                                                                <li><a class="sub-slide-item" href="inline-editor.html">Inline</a></li>
+                                                                <li><a class="sub-slide-item" href="balloon-editor.html">Balloon</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="quill-editor.html" class="slide-item">Quill Editor</a></li>
+                                                        <li><a href="tinymce-editor.html" class="slide-item">Tinymce Editor</a></li>
+                                                        <li><a href="markdown-editor.html" class="slide-item">Markdown Editor</a></li>
+                                                        <li><a href="summernote-editor.html" class="slide-item">Summernote Editor</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub-category">
+                                <h3>Tables</h3>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon ti ti-table"></i><span
+                                        class="side-menu__label">Bootstrap table</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Bootstrap table</a></li>
+                                                        <li><a href="tbl-bootstrap.html" class="slide-item">Basic table</a></li>
+                                                        <li><a href="tbl-sizing.html" class="slide-item">Sizing table</a></li>
+                                                        <li><a href="tbl-styling.html" class="slide-item">Styling table</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)"><i
+                                        class="side-menu__icon bx bxs-shield-plus"></i><span
+                                        class="side-menu__label">Advance Table</span><i class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Advance Table</a></li>
+                                                        <li><a href="datatable.html" class="slide-item">datatable</a></li>
+                                                        <li><a href="edit-table.html" class="slide-item">Edit Tables</a></li>
+                                                        <li><a href="tables-extension.html" class="slide-item">Tables Extension</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a class="sidenav-menu-item" data-bs-toggle="slide" href="javascript:void(0)">
+                                    <i class="side-menu__icon fe fe-sliders"></i>
+                                    <span class="side-menu__label">Level items</span><i
+                                        class="angle fe fe-chevron-right"></i>
+                                </a>
+                                <ul class="slide-menu">
+                                    <li class="panel sidetab-menu">
+                                        <div class="panel-body tabs-menu-body p-0 border-0">
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="side1">
+                                                    <ul class="sidemenu-list">
+                                                        <li class="side-menu-label1"><a href="javascript:void(0)">Level items</a></li>
+                                                        <li><a href="javascript:void(0)" class="slide-item">Level-1</a></li>
+                                                        <li class="sub-slide">
+                                                            <a class="sub-sidenav-menu-item" data-bs-toggle="sub-slide" href="javascript:void(0)"><span
+                                                                    class="sub-side-menu__label">Level-2</span><i
+                                                                    class="sub-angle fe fe-chevron-right"></i></a>
+                                                            <ul class="sub-slide-menu">
+                                                                <li><a class="sub-slide-item" href="javascript:void(0)">Level-2.1</a></li>
+                                                                <li><a class="sub-slide-item" href="javascript:void(0)">Level-2.2</a></li>
+                                                                <li class="sub-slide2">
+                                                                    <a class="sub-sidenav-menu-item" href="javascript:void(0)"
+                                                                        data-bs-toggle="sub-slide2"><span
+                                                                            class="sub-side-menu__label">Level-2.3</span><i
+                                                                            class="sub-angle2 fe fe-chevron-right"></i></a>
+                                                                    <ul class="sub-slide-menu2">
+                                                                        <li><a href="javascript:void(0)" class="sub-slide-item2">Level-2.3.1</a></li>
+                                                                        <li><a href="javascript:void(0)" class="sub-slide-item2">Level-2.3.2</a></li>
+                                                                        <li><a href="javascript:void(0)" class="sub-slide-item2">Level-2.3.3</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a class="sub-slide-item" href="javascript:void(0)">Level-2.4</a></li>
+                                                                <li><a class="sub-slide-item" href="javascript:void(0)">Level-2.5</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+            
+                        <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z" />
+                            </svg></div>
+                    </div>
+                </div>
+            </div>
+            <!--{ app sidebar end }-->
+
+            <!--{ app content start }-->
+            <div class="main-content app-content mt-0">
+                <div class="side-app">
+                    <!--{ container start }-->
+                    <div class="main-container container-fluid">
+                        <!--{ PAGE HEADER START }-->
+                        <div class="page-header">   
+                            <h1 class="page-title">ChartJs</h1>
+                            <div>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">ChartJs</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!--{ PAGE HEADER END }-->
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Line Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartLine" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Bar Chart1</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartBar1" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Bar Chart2</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartBar2" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Area Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartArea" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Donut Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartPie" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Pie Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartDonut" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Radar Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartRadar" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3 class="card-title">Polar Chart</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="chart-container">
+                                            <canvas id="chartPolar" class="h-275"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--{ container end }-->
+                </div>
+            </div>
+            <!--{ app content end }-->
+        </div>
+    </div>
+
+    <!-- Light-Box modal end -->
+    
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row align-items-center flex-row-reverse">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div>Copyright Â© <span id="year"></span> <a href="javascript:void(0)">DashSage</a>. Designed with <span class="fa fa-heart text-danger"></span> by <a href="https://codecanyon.net/user/techneinfosys"> techneinfosys </a> All rights reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- FOOTER END -->
+
+            <!-- BACK-TO-TOP -->
+            <a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+    <!--{ JQUERY JS }-->
+    <script src="../assets/js/jquery.min.js"></script>
+    <!--{ BOOTSTRAP JS }-->
+    <script src="../assets/js/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!--{ SPARKLINE JS }-->
+    <script src="../assets/js/jquery.sparkline.min.js"></script>
+    <!--{ Sticky js }-->
+    <script src="../assets/js/sticky.js"></script>
+    <!--{ SIDEBAR JS }-->
+    <script src="../assets/js/plugins/sidebar/sidebar.js"></script>
+    <!-- Perfect SCROLLBAR JS-->
+    <script src="../assets/js/plugins/p-scroll/perfect-scrollbar.js"></script>
+    <script src="../assets/js/plugins/p-scroll/pscroll.js"></script>
+    <script src="../assets/js/plugins/p-scroll/pscroll-1.js"></script>
+    <!--{ Select2 js }-->
+    <script src="../assets/js/plugins/select2/select2.full.min.js"></script>
+    <script src="../assets/js/plugins/select2/select2.init.js"></script>
+    <!-- chartjs js -->
+    <script src="../assets/js/plugins/chart/Chart.bundle.js"></script>
+    <script src="../assets/js/chart.js"></script>
+    <!--{ SIDE-MENU JS }-->
+    <script src="../assets/js/plugins/sidemenu/sidemenu.js"></script>
+    <!--{ Color Theme js }-->
+    <script src="../assets/js/themeColors.js"></script>
+    <!--{ CUSTOM JS }-->
+    <script src="../assets/js/custom.js"></script>
+    <!--{ Custom-switcher }-->
+    <script src="../assets/js/custom-swicher.js"></script>
+    <!--{ Switcher js }-->
+    <script src="../assets/switcher/js/switcher.js"></script>
+    
+</body>
+
+</html>
